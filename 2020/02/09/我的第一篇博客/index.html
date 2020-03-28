@@ -58,7 +58,7 @@
 <meta property="og:image" content="https://i.loli.net/2020/03/01/tcrO26NbxA8Hl4U.png">
 <meta property="og:image" content="https://i.loli.net/2020/03/01/VyPe2BMx9gHNQYJ.png">
 <meta property="article:published_time" content="2020-02-09T09:08:26.216Z">
-<meta property="article:modified_time" content="2020-03-01T14:54:37.344Z">
+<meta property="article:modified_time" content="2020-03-24T12:45:30.520Z">
 <meta property="article:author" content="Harry">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3642481453,1486938825&fm=26&gp=0.jpg">
@@ -79,7 +79,9 @@
 
   
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -238,9 +240,30 @@
 <h2 id="第三步安装Hexo"><a href="#第三步安装Hexo" class="headerlink" title="第三步安装Hexo"></a>第三步安装Hexo</h2><p>  打开Git<br>输入 安装淘宝镜像源<br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br><img src="https://i.loli.net/2020/02/28/oeWgi2XY4NhAuFb.png" alt="screenShot.png"><br>开始安装hexo<br>输入 cnpm install -g hexo-cli<br><img src="https://i.loli.net/2020/02/28/yM3lwLauxKRscFT.png" alt="screenShot.png"><br>说明hexo已经安装成功<br>   现在开始初始化博客，新建一个Blog文件夹，进入文件夹右键点击 Git Bash Hexo<br>   然后在git输入 hexo init<br>   <img src="https://i.loli.net/2020/02/28/5gjtwsbhRoGKDxJ.png" alt="screenShot.png"><br>   到达这一步说明hexo博客已经初始化成功了，然后启动<br>   hexo s<br><img src="https://i.loli.net/2020/02/28/gwAnIv7xdMT8QGu.png" alt="screenShot.png"><br>   这时，我们可以在本地看一下我们新创建的博客<br>   在浏览器中输入<br>   localhost：4000<br>   就可以看到我们新创建的博客<br> <img src="https://i.loli.net/2020/02/28/B8okDl6WeIXvtHO.png" alt="screenShot.png"><br> 接下来，我们就把hexo博客部署到远端的github中，需要在Blog目录下安装一个hexo的部署插件<br> 输入： cnpm install –save hexo-deployer-git<br>   打开blog下面的 _config.yml<br>   在这之前需要登录github，创建仓库 ，点击new ，输入基本信息之后点击 创建仓库<br><img src="https://i.loli.net/2020/02/28/HYVPBwfUq3QhKXg.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/02/28/yrbw3DsFACgxp9P.png" alt="screenShot.png"><br>创建好仓库之后复制 SSH地址<br><img src="https://i.loli.net/2020/02/28/ymvMYaUNFihXjWg.png" alt="screenShot.png"><br>打开 _config.yml（vscode打开）文件，添加底下4行信息，然后保存<br><img src="https://i.loli.net/2020/02/28/gCK7IefGXZNJzy5.png" alt="screenShot.png"><br>打开Blog目录，右击 Git Bash Here<br>输入  hexo d（部署到远端）<br><img src="https://i.loli.net/2020/02/28/gCK7IefGXZNJzy5.png" alt="screenShot.png"><br>部署成功以后我们就可以通过浏览器来访问我们的博客了<br><img src="https://i.loli.net/2020/02/28/A8xZsyrzw14E9HT.png" alt="screenShot.png"><br>在浏览器打开刚才的SSH网址，就可以查看我们的博客了<br><img src="https://i.loli.net/2020/02/28/xRUt3enWljgkGBi.png" alt="screenShot.png"></p>
 <h2 id="第四步-更换Hexo博客主题框架"><a href="#第四步-更换Hexo博客主题框架" class="headerlink" title="第四步 更换Hexo博客主题框架"></a>第四步 更换Hexo博客主题框架</h2><p>这里使用 yilia 主题进行更换<br>打开Blog目录，右击 Git Bash Here<br>之后输入：<br>git clone <a href="http://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">http://github.com/litten/hexo-theme-yilia.git</a> theme/yilia<br>如下图所示，说明主题已经安装成功（这里安装时间会比较长），安装成功之后可以在 Blog/themes下看到<br><img src="https://i.loli.net/2020/02/28/HRBZeFGlfgX5Qcz.png" alt="screenShot.png"><br>接下来我们打开_config.yml 配置文件在配置文件里面找到theme：yilia  保存修改  </p>
 <p>然后在git中输入如下命令部署博客<br>hexo clean （清理）<br>hexo -g （生成静态文件）<br>hexo -s （启动服务器）（ctrl+c 结束）<br>hexo -d （将博客部署到远端）  </p>
-<h2 id="第五步-更改yilia-主题"><a href="#第五步-更改yilia-主题" class="headerlink" title="第五步 更改yilia 主题"></a>第五步 更改yilia 主题</h2><p>1.解决所有文章缺失的问题<br>参考（<a href="https://cloudy-liu.github.io" target="_blank" rel="noopener">https://cloudy-liu.github.io</a>(hexo yilia 主题一揽子优化方案)）<br>在blog目录下输入以下命令回车<br><img src="https://i.loli.net/2020/02/28/bYZAL2yd5xfDeuT.png" alt="screenShot.png"><br>然后添加以下代码到_config.yml<br><img src="https://i.loli.net/2020/02/28/OcolwVRNmGU9MQA.png" alt="screenShot.png"><br>添加到最下面，然后保存<br><img src="https://i.loli.net/2020/02/29/HY2fScxiaIw6Qme.png" alt="screenShot.png"><br>重新部署博客<br>hexo clean （清理）<br>hexo -g （生成静态文件）<br>hexo -s （启动服务器）（ctrl+c 结束）<br>hexo -d （将博客部署到远端）<br>2.配置图片资源<br>准备好自己要配置的文件，也是在themes/yilia/source/下新建一个文件夹assets ，将图片复制到该文件夹中<br><img src="https://i.loli.net/2020/02/29/2MgacFTzRi78ne6.png" alt="screenShot.png">    </p>
+<h2 id="第五步-更改yilia-主题"><a href="#第五步-更改yilia-主题" class="headerlink" title="第五步 更改yilia 主题"></a>第五步 更改yilia 主题</h2><p>1.解决所有文章缺失的问题<br>参考（<a href="https://cloudy-liu.github.io" target="_blank" rel="noopener">https://cloudy-liu.github.io</a>(hexo yilia 主题一揽子优化方案)）<br>在blog目录下输入以下命令回车<br><img src="https://i.loli.net/2020/02/28/bYZAL2yd5xfDeuT.png" alt="screenShot.png"><br>然后添加以下代码到_config.yml<br><img src="https://i.loli.net/2020/02/28/OcolwVRNmGU9MQA.png" alt="screenShot.png"><br>添加到最下面，然后保存<br><img src="https://i.loli.net/2020/02/29/HY2fScxiaIw6Qme.png" alt="screenShot.png"><br>重新部署博客<br>hexo clean （清理）<br>hexo g （生成静态文件）<br>hexo s （启动服务器）（ctrl+c 结束）<br>hexo d （将博客部署到远端）<br>2.配置图片资源<br>准备好自己要配置的文件，也是在themes/yilia/source/下新建一个文件夹assets ，将图片复制到该文件夹中<br><img src="https://i.loli.net/2020/02/29/2MgacFTzRi78ne6.png" alt="screenShot.png">    </p>
 <p>打开yilia主题下的_config.yml ，将需要添加的应用前面的#号去掉，并添加 路径和信息<br>  <img src="https://i.loli.net/2020/02/29/XCbtUzhePYmVvFw.png" alt="screenShot.png"><br>然后设置打赏项目中的 支付宝和微信地址<br><img src="https://i.loli.net/2020/02/29/MFxjIJRWsBGp5u8.png" alt="screenShot.png"><br>接下来是配置头像和网站图标<br><img src="https://i.loli.net/2020/02/29/o8QAFOimhn3K5ep.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/02/29/r81xkFKYSUsVN3Z.png" alt="screenShot.png"><br>重新部署博客<br>hexo clean （清理）<br>hexo -g （生成静态文件）<br>hexo -s （启动服务器）（ctrl+c 结束）<br>hexo -d （将博客部署到远端）<br>hexo new  “文章标题”<br>如何编写markdown文档，可以参考<br><a href="https://blog.csdn.net/sanallen/article/details/92081911" target="_blank" rel="noopener">https://blog.csdn.net/sanallen/article/details/92081911</a><br>修改文章全文显示问题<br><img src="https://i.loli.net/2020/03/01/oWhum7Z5GDA3IS4.png" alt="screenShot.png"><br>修改博客名字，打开yilia主题下的_config.yml ，将author改成自己想要的名字。<br><img src="https://i.loli.net/2020/03/01/jkudlMXzT5FfiLI.png" alt="screenShot.png"><br>重新部署博客<br>hexo clean （清理）<br>hexo -g （生成静态文件）<br>hexo -s （启动服务器）（ctrl+c 结束）<br>hexo -d （将博客部署到远端）<br>文章目录显示<br>打开yilia主题下的_config.yml 文件<br><img src="https://i.loli.net/2020/03/01/EZjM7DHkfYKyIAS.png" alt="screenShot.png"><br>将toc设置成2<br><img src="https://i.loli.net/2020/03/01/ogzqs4cZ6WvSPVn.png" alt="screenShot.png"><br>增加归档菜单<br><img src="https://i.loli.net/2020/03/01/bohqQUv3tBCwJSe.png" alt="screenShot.png"><br>打开yilia主题下的_config.yml 文件<br><img src="https://i.loli.net/2020/03/01/82ObE7hZVSDT65B.png" alt="screenShot.png"><br>插入网易云音乐  点击生成外链播放器（有版权保护的无法生成），去掉自动播放，复制代码  ，将复制的代码粘贴在文章的最后，这样就可以在文末播放音乐了。<br><img src="https://i.loli.net/2020/03/01/RJa7zcvAKgsbonF.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/03/01/rJEKw6nkf8sGHld.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/03/01/Qy1Yp8rLk2AguVc.png" alt="screenShot.png"><br>如果想在左边添加音乐播放器可以参考<br><a href="https://joeybling.github.io/2019/05/09/Hexo博客yilia主题添加背景音乐(网易云音乐)" target="_blank" rel="noopener">https://joeybling.github.io/2019/05/09/Hexo博客yilia主题添加背景音乐(网易云音乐)</a><br>打开yilia/layout/_partial/left-col.ejs文件的nav标签中添加代码<br><img src="https://i.loli.net/2020/03/01/PkgnMIoDSO3iVJe.png" alt="screenShot.png"><br>根据上面的参考链接，在yilia主题下的_config.yml 文件中添加属性：网易云音乐<br><img src="https://i.loli.net/2020/03/01/9nlTEQJXOkem1ry.png" alt="screenShot.png"><br>解决微信分享异常问题<br>参考链接：<br>dongshuyan.com/2019/05/24/hexo博客注意事项/#1、微信分享异常 ，如下图所示，打开以下目录，按下图中的提示将代码复制到对应的位置<br><img src="https://i.loli.net/2020/03/01/8orTicuywX4BsVZ.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/03/01/hpLPnDcsdviJ5M6.png" alt="screenShot.png"><br>接着如下图所示添加一行代码 ，然后按照提示修改相应位置代码<br><img src="https://i.loli.net/2020/03/01/tcrO26NbxA8Hl4U.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/03/01/VyPe2BMx9gHNQYJ.png" alt="screenShot.png"><br>重新部署博客，应该就能看到效果了<br>hexo clean （清理）<br>hexo -g （生成静态文件）<br>hexo -s （启动服务器）（ctrl+c 结束）<br>hexo -d （将博客部署到远端） </p>
 
+        <div id="aplayer-gmUFaboi" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-gmUFaboi"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "Caffeine",
+              author: "Jeff Williams",
+              url: "http://7xq131.com1.z0.glb.clouddn.com/Preparation.mp3",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://devtest.qiniudn.com/若能绽放光芒.mp4","pic":"http://devtest.qiniudn.com/若能绽放光芒.png"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
       
 
       
@@ -418,19 +441,7 @@
          < d i v   i d = " f o o t e r - i n f o " >  
          	 < d i v   c l a s s = " f o o t e r - l e f t " >  
          	 	 & c o p y ;   < % =   d a t e ( n e w   D a t e ( ) ,   ' Y Y Y Y ' )   % >   < % =   c o n f i g . a u t h o r   | |   c o n f i g . t i t l e   % >  
-                         < / d i v >  
-                         < s c r i p t   a s y n c   s r c = " / / b u s u a n z i . i b r u c e . i n f o /  
-                         b u s u a n z i / 2 . 3 / b u s u a n z i . p u r e . m i n i . j s " > < / s c r i p t >  
-                         < s p a n   >  
-                                 ,g�z;`���ϑ< s p a n   i d = " b u s u a n z i _ v a l u e _ s i t e _ p v " > < / s p a n > !k 
-                       < / s p a n >  
-             	 < s p a n   c l a s s = " p o s t - m e t a - d i v i d e r " > | < / s p a n >  
-                       < s p a n   >  
-                                   ,g�z���[pe< s p a n   i d = " b u s u a n z i _ v a l u e _ s i t e _ u v " > < / s p a n > �N 
-                     < / s p a n >  
-         < s c r i p t   a s y n c   s r c = " h t t p s / / b u s u a n z i . i b r u c e . i n f o / b u s u a n z i / 2 . 3 / b u s u a n z i . p u r e . m i n i . j s ����" > < / s c r i p t >  
- < %   }   % >  
-             	 	 < a   h r e f = " h t t p : / / h e x o . i o / "   t a r g e t = " _ b l a n k " > H e x o < / a >     T h e m e   < a   h r e f = " h t t p s : / / g i t h u b . c o m / l i t t e n / h e x o - t h e m e - y i l i a "   t a r g e t = " _ b l a n k " > Y i l i a < / a >   b y   L i t t e n  
+  
              	 < / d i v >  
          < / d i v >  
      < / d i v >  
