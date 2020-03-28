@@ -243,12 +243,12 @@
 <h2 id="第五步-更改yilia-主题"><a href="#第五步-更改yilia-主题" class="headerlink" title="第五步 更改yilia 主题"></a>第五步 更改yilia 主题</h2><p>1.解决所有文章缺失的问题<br>参考（<a href="https://cloudy-liu.github.io" target="_blank" rel="noopener">https://cloudy-liu.github.io</a>(hexo yilia 主题一揽子优化方案)）<br>在blog目录下输入以下命令回车<br><img src="https://i.loli.net/2020/02/28/bYZAL2yd5xfDeuT.png" alt="screenShot.png"><br>然后添加以下代码到_config.yml<br><img src="https://i.loli.net/2020/02/28/OcolwVRNmGU9MQA.png" alt="screenShot.png"><br>添加到最下面，然后保存<br><img src="https://i.loli.net/2020/02/29/HY2fScxiaIw6Qme.png" alt="screenShot.png"><br>重新部署博客<br>hexo clean （清理）<br>hexo g （生成静态文件）<br>hexo s （启动服务器）（ctrl+c 结束）<br>hexo d （将博客部署到远端）<br>2.配置图片资源<br>准备好自己要配置的文件，也是在themes/yilia/source/下新建一个文件夹assets ，将图片复制到该文件夹中<br><img src="https://i.loli.net/2020/02/29/2MgacFTzRi78ne6.png" alt="screenShot.png">    </p>
 <p>打开yilia主题下的_config.yml ，将需要添加的应用前面的#号去掉，并添加 路径和信息<br>  <img src="https://i.loli.net/2020/02/29/XCbtUzhePYmVvFw.png" alt="screenShot.png"><br>然后设置打赏项目中的 支付宝和微信地址<br><img src="https://i.loli.net/2020/02/29/MFxjIJRWsBGp5u8.png" alt="screenShot.png"><br>接下来是配置头像和网站图标<br><img src="https://i.loli.net/2020/02/29/o8QAFOimhn3K5ep.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/02/29/r81xkFKYSUsVN3Z.png" alt="screenShot.png"><br>重新部署博客<br>hexo clean （清理）<br>hexo -g （生成静态文件）<br>hexo -s （启动服务器）（ctrl+c 结束）<br>hexo -d （将博客部署到远端）<br>hexo new  “文章标题”<br>如何编写markdown文档，可以参考<br><a href="https://blog.csdn.net/sanallen/article/details/92081911" target="_blank" rel="noopener">https://blog.csdn.net/sanallen/article/details/92081911</a><br>修改文章全文显示问题<br><img src="https://i.loli.net/2020/03/01/oWhum7Z5GDA3IS4.png" alt="screenShot.png"><br>修改博客名字，打开yilia主题下的_config.yml ，将author改成自己想要的名字。<br><img src="https://i.loli.net/2020/03/01/jkudlMXzT5FfiLI.png" alt="screenShot.png"><br>重新部署博客<br>hexo clean （清理）<br>hexo -g （生成静态文件）<br>hexo -s （启动服务器）（ctrl+c 结束）<br>hexo -d （将博客部署到远端）<br>文章目录显示<br>打开yilia主题下的_config.yml 文件<br><img src="https://i.loli.net/2020/03/01/EZjM7DHkfYKyIAS.png" alt="screenShot.png"><br>将toc设置成2<br><img src="https://i.loli.net/2020/03/01/ogzqs4cZ6WvSPVn.png" alt="screenShot.png"><br>增加归档菜单<br><img src="https://i.loli.net/2020/03/01/bohqQUv3tBCwJSe.png" alt="screenShot.png"><br>打开yilia主题下的_config.yml 文件<br><img src="https://i.loli.net/2020/03/01/82ObE7hZVSDT65B.png" alt="screenShot.png"><br>插入网易云音乐  点击生成外链播放器（有版权保护的无法生成），去掉自动播放，复制代码  ，将复制的代码粘贴在文章的最后，这样就可以在文末播放音乐了。<br><img src="https://i.loli.net/2020/03/01/RJa7zcvAKgsbonF.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/03/01/rJEKw6nkf8sGHld.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/03/01/Qy1Yp8rLk2AguVc.png" alt="screenShot.png"><br>如果想在左边添加音乐播放器可以参考<br><a href="https://joeybling.github.io/2019/05/09/Hexo博客yilia主题添加背景音乐(网易云音乐)" target="_blank" rel="noopener">https://joeybling.github.io/2019/05/09/Hexo博客yilia主题添加背景音乐(网易云音乐)</a><br>打开yilia/layout/_partial/left-col.ejs文件的nav标签中添加代码<br><img src="https://i.loli.net/2020/03/01/PkgnMIoDSO3iVJe.png" alt="screenShot.png"><br>根据上面的参考链接，在yilia主题下的_config.yml 文件中添加属性：网易云音乐<br><img src="https://i.loli.net/2020/03/01/9nlTEQJXOkem1ry.png" alt="screenShot.png"><br>解决微信分享异常问题<br>参考链接：<br>dongshuyan.com/2019/05/24/hexo博客注意事项/#1、微信分享异常 ，如下图所示，打开以下目录，按下图中的提示将代码复制到对应的位置<br><img src="https://i.loli.net/2020/03/01/8orTicuywX4BsVZ.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/03/01/hpLPnDcsdviJ5M6.png" alt="screenShot.png"><br>接着如下图所示添加一行代码 ，然后按照提示修改相应位置代码<br><img src="https://i.loli.net/2020/03/01/tcrO26NbxA8Hl4U.png" alt="screenShot.png"><br><img src="https://i.loli.net/2020/03/01/VyPe2BMx9gHNQYJ.png" alt="screenShot.png"><br>重新部署博客，应该就能看到效果了<br>hexo clean （清理）<br>hexo -g （生成静态文件）<br>hexo -s （启动服务器）（ctrl+c 结束）<br>hexo -d （将博客部署到远端） </p>
 
-        <div id="aplayer-YYzMzptj" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-rQLrNfQO" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-YYzMzptj"),
+            element: document.getElementById("aplayer-rQLrNfQO"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -436,11 +436,21 @@
           </div>
         </div>
       </div>
-      �� 
-  
+      ��< f o o t e r   i d = " f o o t e r " >  
+     < d i v   c l a s s = " o u t e r " >  
+         < d i v   i d = " f o o t e r - i n f o " >  
+         	 < d i v   c l a s s = " f o o t e r - l e f t " >  
+         	 	 & c o p y ;   < % =   d a t e ( n e w   D a t e ( ) ,   ' Y Y Y Y ' )   % >   < % =   c o n f i g . a u t h o r   | |   c o n f i g . t i t l e   % >  
+             	 < / d i v >  
+ < d i v   c l a s s = " f o o t e r - r i g h t " >  
+ < a   h r e f = " h t t p : / / h e x o . i o / "   t a r g e t = " _ b l a n k " > H e x o < / a >   T h e m e   < a   h r e f = " h t t p s : / / g i t h u b . c o m / l i t t e n / h e x o - t h e m e - y i l i a "     t a r g e t = " _ b l a n k " > Y i l i a < / a >   b y   L i t t e n  
+     < / d i v >  
+         < / d i v >  
+     < / d i v >  
+ < / f o o t e r >  
  < ! - - u�b��p�Q\�~�_- - >  
- < s c r i p t   t y p e = " t e x t / j a v a s c r i p t "   s r c = " / l o v e . j s " > < / s c r i p t >  
-                 
+ < s c r i p t   t y p e = " t e x t / j a v a s c r i p t "   s r c = " / l o v e . j s " > < / s c r i p t >          
+ < s c r i p t     a s y n c     s r c = " h t t p s : / / d n - l b s t a t i c s . q b o x . m e / b u s u a n z i / 2 . 3 / b u s u a n z i . p u r e . m i n i . j s " > < / s c r i p t > 
     </div>
     <script>
 	var yiliaConfig = {
